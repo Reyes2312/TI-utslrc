@@ -1,0 +1,265 @@
+.nivel-tsu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f4f8 0%, #f0f4f8 100%);
+  padding: 60px 20px;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.nivel-tsu-content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  text-align: left;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.nivel-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  color: black;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+  font-weight: 900;
+}
+
+.descripcion-iconos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  width: 65%;
+}
+
+.nivel-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 0 20px;
+  border-left: 4px solid #00C9A7;
+  padding-left: 20px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nivel-description:hover {
+  transform: scale(1.03);
+}
+
+.iconos-container {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.icono-flecha {
+  width: 180px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 90%;
+  margin-top: 90px;
+  transform: translateY(-50%);
+  margin-right: 100px;
+}
+
+.icono-implementacion {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.oferta-educativa-container {
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.oferta-title {
+  font-size: 2.8rem;
+  color: #00C9A7;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.oferta-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.oferta-item {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  border: 2px solid #00C9A7;
+  border-radius: 12px;
+  transition: background-color 0.4s, transform 0.3s, box-shadow 0.4s ease-in-out;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+}
+
+.oferta-item:hover {
+  background-color: #00C9A7;
+  color: white;
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.oferta-icon {
+  color: #00C9A7;
+  margin-right: 15px;
+  font-size: 1.6rem;
+  transition: transform 0.3s;
+}
+
+.oferta-item:hover .oferta-icon {
+  transform: rotate(90deg);
+}
+
+.oferta-tag {
+  font-size: 1rem;
+  color: #00C9A7;
+  margin-left: 10px;
+  font-style: italic;
+}
+
+/* Animación para el fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Media Queries */
+
+/* Ajustes para dispositivos medianos (tablets) */
+@media (max-width: 1024px) {
+  .descripcion-iconos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .iconos-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nivel-title {
+    font-size: 3rem;
+  }
+
+  .nivel-description {
+    font-size: 1.3rem;
+  }
+
+  .oferta-title {
+    font-size: 2.4rem;
+  }
+
+  .oferta-item {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+
+  .oferta-icon {
+    font-size: 1.4rem;
+  }
+}
+
+/* Ajustes para dispositivos pequeños (móviles) */
+@media (max-width: 768px) {
+  .nivel-title {
+    font-size: 2.8rem;
+  }
+
+  .nivel-description {
+    font-size: 1.2rem;
+  }
+
+  .oferta-title {
+    font-size: 2rem;
+  }
+
+  .oferta-item {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+
+  .oferta-icon {
+    font-size: 1.3rem;
+  }
+
+  .descripcion-iconos {
+    flex-direction: column;
+  }
+
+  .text-container, .iconos-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .iconos-container {
+    display: none;
+  }
+}
+
+/* Ajustes para dispositivos muy pequeños (smartphones compactos) */
+@media (max-width: 480px) {
+  .nivel-title {
+    font-size: 2.4rem;
+  }
+
+  .nivel-description {
+    font-size: 1.1rem;
+  }
+
+  .oferta-title {
+    font-size: 1.8rem;
+  }
+
+  .oferta-item {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  .oferta-icon {
+    font-size: 1.2rem;
+  }
+}

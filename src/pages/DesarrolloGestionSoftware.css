@@ -1,0 +1,223 @@
+.ingenieria-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 40px 20px;
+}
+
+.ingenieria-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.ingenieria-header__text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ingenieria-header__title {
+  font-size: 2rem; /* Ajustar el tamaño para un mejor fit */
+  color: black;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.2; /* Mejorar la separación entre las líneas */
+  text-align: center; /* Centrar el título */
+  display: block;
+  word-spacing: 5px; /* Espacio adicional entre palabras */
+}
+
+.ingenieria-header__title span {
+  display: block;
+  font-size: 3.5rem; /* Ajustar tamaño para que no sea demasiado grande */
+  color: #28B48A;
+  text-align: center;
+  word-break: break-word; /* Evitar que las palabras se separen incorrectamente */
+}
+
+
+
+.ingenieria-header__icon {
+  width: 200px;
+  height: auto;
+  flex: 1;
+}
+
+.ingenieria-plan-cuatrimestral {
+  margin-top: 10px;
+}
+
+.ingenieria-plan-cuatrimestral__button {
+  background-color: transparent;
+  color: #00C9A7;
+  border: 2px solid #00C9A7;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ingenieria-plan-cuatrimestral__button:hover {
+  background-color: #00C9A7;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* Contenido principal de la página */
+.ingenieria-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+/* Estilo de las columnas */
+.ingenieria-column {
+  width: 32%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el cursor */
+  text-align: justify;
+}
+
+.ingenieria-column:hover {
+  transform: translateY(-10px); /* Efecto de elevación al pasar el cursor */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra para mayor efecto */
+}
+
+.ingenieria-column__title {
+  font-size: 1.8rem;
+  color: #00C9A7;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.ingenieria-column__list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+}
+
+.ingenieria-column__list li::before {
+  content: "•";
+  color: #00C9A7;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+/* Sección de presentación */
+.ingenieria-presentation {
+  max-width: 1200px;
+  margin-top: 40px;
+  text-align: center;
+  padding: 40px; /* Espacio interior */
+  background-color: white; /* Fondo blanco */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el cursor */
+}
+
+.ingenieria-presentation:hover {
+  transform: translateY(-10px); /* Efecto de elevación */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Mayor sombra */
+}
+
+.ingenieria-presentation__title {
+  font-size: 2.5rem;
+  color: #00C9A7;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.ingenieria-presentation__text {
+  font-size: 1.3rem;
+  color: #555;
+  line-height: 1.8;
+  max-width: 1000px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+  .ingenieria-header__title {
+    font-size: 3rem;
+  }
+
+  .ingenieria-header__title span {
+    font-size: 4rem;
+  }
+
+  .ingenieria-header__icon {
+    width: 150px;
+  }
+
+  .ingenieria-column {
+    width: 48%; /* Ajuste para tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .ingenieria-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ingenieria-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .ingenieria-header__title {
+    font-size: 2.5rem;
+  }
+
+  .ingenieria-header__title span {
+    font-size: 3.5rem;
+  }
+
+  .ingenieria-header__icon {
+    width: 100px;
+  }
+
+  .ingenieria-presentation {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ingenieria-header__title {
+    font-size: 2rem;
+  }
+
+  .ingenieria-header__title span {
+    font-size: 3rem;
+  }
+
+  .ingenieria-header__icon {
+    width: 80px;
+  }
+
+  .ingenieria-presentation {
+    padding: 15px;
+  }
+
+  .ingenieria-plan-cuatrimestral__button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}

@@ -1,0 +1,212 @@
+.ingenieria-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%);
+  padding: 60px 20px;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.ingenieria-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.ingenieria-title span {
+  color: #00C9A7;
+  display: block;
+  font-weight: 900;
+  font-size: 4.5rem;
+}
+
+@media (max-width: 768px) {
+  .ingenieria-title {
+    font-size: 2.5rem;
+  }
+
+  .ingenieria-title span {
+    font-size: 3rem;
+  }
+}
+
+/* Ajuste general de colores y texto */
+.ingenieria-skills-list,
+.ingenieria-profile-extra,
+.ingenieria-profile-description,
+.ingenieria-presentation-description,
+.ingenieria-scenarios-grid,
+.ingenieria-occupation-card {
+  color: black;
+  text-align: justify; /* Justificación de texto */
+}
+
+/* Tarjetas para cada sección */
+.ingenieria-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1200px;
+}
+
+.ingenieria-profile-title,
+.ingenieria-scenarios-title,
+.ingenieria-occupations-title,
+.asignaturas-title {
+  font-size: 2.5rem;
+  color: #00C9A7;
+  margin-bottom: 20px;
+}
+
+/* Escenarios de Actuación y Ocupaciones Profesionales */
+.ingenieria-scenarios-grid,
+.ingenieria-occupations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.ingenieria-scenario-card,
+.ingenieria-occupation-card {
+  background-color: #f8f9fa; /* Color de fondo ligeramente gris */
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #00C9A7; /* Borde de color principal */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.ingenieria-scenario-card:hover,
+.ingenieria-occupation-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Mayor sombra en hover */
+  background-color: #ffffff; /* Fondo blanco puro al hacer hover */
+}
+
+.scenario-icon,
+.occupation-icon {
+  font-size: 1.8rem; /* Iconos ligeramente más grandes */
+  color: #00C9A7;
+  margin-bottom: 10px;
+}
+
+.ingenieria-presentation-title {
+  font-size: 2.5rem;
+  color: #00C9A7;
+  margin-bottom: 20px;
+}
+
+/* Ajuste del contenido de texto en cada sección */
+.ingenieria-profile-extra h3 {
+  margin-left: 29px;
+  margin-top: 12px;
+}
+
+.ingenieria-profile-extra li,
+.ingenieria-skills-list li {
+  margin-left: 50px;
+  margin-top: 5px;
+  text-align: justify; /* Justificación de texto */
+}
+
+.ingenieria-presentation-description p {
+  text-align: justify; /* Justificación de texto */
+}
+
+.ingenieria-presentation-description2 {
+  color: black;
+  text-align: justify; /* Justificación de texto */
+  margin-top: 15px;
+}
+
+/* Asignaturas */
+.asignaturas-tsu-section {
+  text-align: center;
+}
+
+.asignaturas-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.asignaturas-column {
+  background-color: #2e4057;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.asignaturas-column:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.asignaturas-column h3 {
+  font-size: 1.8rem;
+  color: #00C9A7;
+  margin-bottom: 15px;
+}
+
+.asignaturas-column p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #00C9A7;
+  padding-bottom: 5px;
+}
+
+.ingenieria-skills-list h3{
+  margin-top: 16px;
+  margin-left: 29px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ingenieria-title {
+    font-size: 2.5rem;
+  }
+
+  .ingenieria-title span {
+    font-size: 3rem;
+  }
+
+  .ingenieria-scenario-card,
+  .ingenieria-occupation-card {
+    padding: 15px;
+  }
+
+  .ingenieria-presentation-title,
+  .ingenieria-scenarios-title,
+  .ingenieria-occupations-title {
+    font-size: 2rem;
+  }
+
+  .asignaturas-grid {
+    flex-direction: column;
+  }
+}
+
+.ingenieria-scenarios-description{
+  color:black;
+}
+
+.ingenieria-occupations-description{
+  color: black;
+}

@@ -1,0 +1,152 @@
+.navbar-desktop {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Fondo más oscuro */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 100;
+}
+
+.logo-desktop {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image-desktop {
+  width: 100px;
+}
+
+.menu-icon-desktop {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+}
+
+.menu-bar-desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+}
+
+.line-desktop {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.menu-bar-desktop.open-desktop .line-desktop:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-bar-desktop.open-desktop .line-desktop:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-bar-desktop.open-desktop .line-desktop:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-links-desktop {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .nav-links-desktop {
+    justify-content: center;
+    margin-right: 420px;
+  }
+}
+
+.nav-links-desktop a,
+.dropdown-desktop span {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-links-desktop a:hover,
+.dropdown-desktop span:hover {
+  color: #00c9a7;
+}
+
+/* Modificaciones para el menú desplegable */
+.dropdown-desktop {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu-desktop {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo del dropdown más oscuro */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  display: none; /* Inicialmente oculto */
+}
+
+.dropdown-desktop:hover .dropdown-menu-desktop {
+  display: block; /* Mostrar menú desplegable al pasar el mouse */
+}
+
+.dropdown-menu-desktop li {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+
+.dropdown-menu-desktop a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Logos en el footer del menú desplegable */
+.logos-container-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 150px;
+  gap: 20px;
+}
+
+.logo-footer1-desktop,
+.logo-footer2-desktop {
+  width: 99px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.close-menu-desktop {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 4rem;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .navbar-desktop {
+    display: none;
+  }
+}

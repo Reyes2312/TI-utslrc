@@ -1,0 +1,154 @@
+.nivel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.nivel-content {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1200px; 
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.icono-tecnologia2{
+  width: 180px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 200px;
+  margin-right: 100px;
+}
+
+.icono-descifrador {
+  width: 180px;
+  height: auto;
+  position: absolute;
+  left: 0; 
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 160px;
+  margin-left: 790px; 
+}
+
+
+.nivel-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-animation {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.nivel-title {
+  font-size: 3rem;
+  color: #00C9A7;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.nivel-description {
+  font-size: 1.2rem;
+  color: black;
+  line-height: 1.6;
+  max-width: 1000px; 
+  margin-bottom: 20px;
+  text-align: justify;
+  border-left: 4px solid #00C9A7;
+  padding-left: 15px;
+}
+
+.oferta-educativa-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.oferta-title {
+  font-size: 2.5rem;
+  color: #00C9A7;
+  margin-bottom: 20px;
+}
+
+.oferta-list {
+  list-style: none;
+  padding: 0;
+}
+
+.oferta-item {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border: 2px solid #00C9A7;
+  border-radius: 12px;
+  background-color: white;
+  transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.oferta-item:hover {
+  background-color: white;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.oferta-icon {
+  color: #00C9A7;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.oferta-tag {
+  font-size: 0.9rem;
+  color: #00C9A7;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .nivel-title {
+    font-size: 2.5rem;
+  }
+
+  .nivel-description {
+    font-size: 1rem;
+  }
+
+  .oferta-title {
+    font-size: 2rem;
+  }
+
+  .oferta-item {
+    font-size: 1rem;
+  }
+}

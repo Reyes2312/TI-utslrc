@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 100; 
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-links li a:hover {
+  color: #00C9A7;
+}
+
+.logo-image {
+  height: 50px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: #00C9A7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-btn:hover {
+  background-color: #009f87;
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu li:hover {
+  background-color: black;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+
+.programas-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 40px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.programas-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #00C9A7;
+}
+
+.programas-container p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+
+@media (max-width: 768px) {
+  .programas-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .programas-container p {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+}

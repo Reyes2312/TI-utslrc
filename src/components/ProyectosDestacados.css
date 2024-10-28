@@ -1,0 +1,50 @@
+.proyectos-section {
+    padding: 50px 20px;
+    background-color:#f0f4f8;
+    text-align: center;
+}
+
+.proyectos-title {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.proyectos-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    background-color: #fff;
+    padding: 30px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 350px;
+    text-align: left;
+}
+
+.proyecto h3 {
+    color: #00C9A7;
+    margin-bottom: 10px;
+}
+
+.proyecto p {
+    color: #333;
+    font-size: 1rem;
+}
+
+.proyecto-video, .proyecto-img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 250px;
+}
+
+@media (max-width: 768px) {
+    .proyecto {
+        max-width: 100%;
+    }
+}

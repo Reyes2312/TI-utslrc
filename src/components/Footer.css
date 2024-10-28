@@ -1,0 +1,35 @@
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-social-links a {
+  color: #00C9A7;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-social-links a:hover {
+  color: var(--accent-color); 
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    font-size: 12px;
+  }
+
+  .footer-social-links a {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,179 @@
+.vida-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.vida-title {
+  background-color: #00C9A7; /* Estilo similar al título de la segunda imagen */
+  color: white;
+  padding: 15px 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho máximo en pantallas grandes */
+}
+
+.vida-description2 {
+  background-color: #00C9A7;  
+  color: white;               
+  padding: 10px 20px;       
+  font-size: 1rem;            
+  font-weight: bold;          
+  border-radius: 10px;         
+  text-transform: uppercase; 
+  text-align: center;
+  width: 100%;
+  max-width: 1200px; /* Ajuste dinámico para pantallas grandes */
+  margin: 20px 0;
+}
+
+.vida-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+.vida-gallery {
+  width: 100%;
+  max-width: 900px; /* Asegura que la galería no exceda este ancho en pantallas grandes */
+}
+
+.vida-image {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  max-height: 500px; /* Limita la altura de la imagen para adaptarse mejor a la pantalla */
+  object-fit: cover;
+}
+
+.vida-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 20%;
+  max-width: 250px; /* Asegura que los botones no se extiendan demasiado */
+}
+
+.vida-button, .vida-button2 {
+  background-color: #00C9A7;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 100%;
+}
+
+.vida-button:hover, .vida-button2:hover {
+  background-color: #007f6a;
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 1024px) {
+  .vida-title {
+    font-size: 2rem;
+    padding: 12px 20px;
+  }
+
+  .vida-description2 {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .vida-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .vida-gallery {
+    width: 100%;
+    max-width: 700px; /* Ajusta el ancho en pantallas medianas */
+  }
+
+  .vida-buttons {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .vida-title {
+    font-size: 1.6rem;
+    padding: 10px 15px;
+  }
+
+  .vida-description2 {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .vida-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .vida-gallery {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .vida-button, .vida-button2 {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .vida-title {
+    font-size: 1.4rem;
+    padding: 8px 12px;
+  }
+
+  .vida-description2 {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .vida-buttons {
+    width: 100%;
+    max-width: none;
+  }
+
+  .vida-gallery {
+    max-width: 100%;
+  }
+
+  .vida-button, .vida-button2 {
+    padding: 10px;
+    font-size: 0.9rem; /* Ajuste del tamaño de letra en pantallas más pequeñas */
+  }
+}

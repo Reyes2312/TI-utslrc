@@ -1,0 +1,362 @@
+.dev-software-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%);
+  padding: 60px 20px;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 40px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #00C9A7;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-content ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: black;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.modal-close-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00C9A7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.modal-close-button:hover {
+  background-color: #00a083;
+}
+
+.dev-software-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.dev-software-title {
+  font-size: 3.5rem;
+  color: #00C9A7;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.tech-info-subtitle2 {
+  color: black;
+}
+
+.profile-card p,
+.scenarios-card p,
+.occupations-card p {
+  color: black;
+  text-align: justify;
+}
+
+.profile-grid, .scenarios-occupations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.profile-card, .scenarios-card, .occupations-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-list li {
+  margin-top: 20px;
+}
+
+.profile-card:hover, .scenarios-card:hover, .occupations-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card h3, .scenarios-card h3, .occupations-card h3 {
+  color: #00C9A7;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.skills-list, .scenarios-list, .occupations-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-list li, .scenarios-list li, .occupations-list li {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.skills-list li::before, .scenarios-list li::before, .occupations-list li::before {
+  content: '➤';
+  position: absolute;
+  left: 0;
+  color: #00C9A7;
+  font-size: 1.5rem;
+}
+
+.promo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
+  position: relative;
+}
+
+.promo-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+
+.promo-image {
+  flex: 1;
+  position: relative;
+}
+
+.promo-image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.promo-text-content {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  position: relative;
+  top: -40px;
+  left: -20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-text-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+}
+
+.promo-text-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00C9A7;
+}
+
+.promo-text-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: justify;
+}
+
+.promo-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 240px;
+}
+
+.promo-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.subjects-section {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 40px;
+}
+
+.subjects-title {
+  text-align: center;
+  color: #00C9A7;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.subject-card {
+  background-color: #003366;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subject-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+.subject-card h4 {
+  color: #00C9A7;
+  margin-bottom: 10px;
+}
+
+.subject-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.subject-card li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.subject-card li:last-child {
+  border-bottom: none;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .promo-container {
+    flex-direction: column;
+  }
+
+  .promo-image img {
+    width: 100%;
+  }
+
+  .promo-text-content {
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .dev-software-title {
+    font-size: 2.5rem;
+  }
+
+  .profile-grid, .scenarios-occupations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subjects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subjects-title {
+    font-size: 1.8rem;
+  }
+
+  .promo-button {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .modal-content {
+    padding: 20px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dev-software-title {
+    font-size: 4vw;
+  }
+
+  .profile-card, .scenarios-card, .occupations-card {
+    padding: 20px;
+  }
+
+  .promo-button {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .modal-content {
+    padding: 20px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .dev-software-title {
+    font-size: 5vw;
+  }
+
+  .profile-grid, .scenarios-occupations-grid {
+    gap: 10px;
+  }
+
+  .subject-card {
+    padding: 15px;
+  }
+
+  .promo-button {
+    font-size: 0.8rem;
+  }
+
+  .modal-content {
+    padding: 15px;
+  }
+}
